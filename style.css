@@ -47,7 +47,17 @@ body {
     #b6bae6 60%,
     #9198e5 100%
   ); */
-  background: linear-gradient(to right top, #f7b6b6 0%, #9198e5);
+  /* background: linear-gradient(to right top, #f7b6b6 0%, #9198e5); */
+  background: radial-gradient(
+    circle,
+    rgba(181, 181, 252, 1) 0%,
+    rgba(210, 186, 252, 1) 50%,
+    rgba(255, 214, 255, 1) 100%
+  );
+
+  animation: gradient 10s ease infinite alternate;
+  background-size: 400% 400%;
+  height: 100vh;
   background-attachment: fixed;
   color: #252421;
   overflow: auto;
@@ -116,6 +126,12 @@ p a:hover {
 }
 
 #home-text {
+  color: transparent;
+
+  opacity: 25%;
+  text-shadow: 2px 2px black;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.75px;
@@ -198,91 +214,24 @@ i:hover {
   }
 }
 
-.color-shift {
-  -webkit-animation: color-change 1s infinite alternate;
-  -moz-animation: color-change 1s infinite;
-  -o-animation: color-change 1s infinite;
-  -ms-animation: color-change 1s infinite;
-  animation: color-change 1s infinite alternate;
-}
-@keyframes color-change {
-  100% {
-    color: rgb(93, 172, 209);
-  }
-  66% {
-    color: rgb(97, 97, 245);
-  }
-  33% {
-    color: rgb(32, 42, 131);
-  }
+@keyframes gradient {
   0% {
-    color: rgb(0, 0, 0);
+    background-position: 0% 50%;
   }
-}
-
-@-webkit-keyframes color-change {
+  50% {
+    background-position: 100% 50%;
+  }
   100% {
-    color: rgb(93, 172, 209);
-  }
-  66% {
-    color: rgb(97, 97, 245);
-  }
-  33% {
-    color: rgb(32, 42, 131);
-  }
-  0% {
-    color: rgb(0, 0, 0);
-  }
-}
-@-moz-keyframes color-change {
-  100% {
-    color: rgb(93, 172, 209);
-  }
-  66% {
-    color: rgb(97, 97, 245);
-  }
-  33% {
-    color: rgb(32, 42, 131);
-  }
-  0% {
-    color: rgb(0, 0, 0);
-  }
-}
-@-ms-keyframes color-change {
-  100% {
-    color: rgb(93, 172, 209);
-  }
-  66% {
-    color: rgb(97, 97, 245);
-  }
-  33% {
-    color: rgb(32, 42, 131);
-  }
-  0% {
-    color: rgb(0, 0, 0);
-  }
-}
-@-o-keyframes color-change {
-  100% {
-    color: rgb(93, 172, 209);
-  }
-  66% {
-    color: rgb(97, 97, 245);
-  }
-  33% {
-    color: rgb(32, 42, 131);
-  }
-  0% {
-    color: rgb(0, 0, 0);
+    background-position: 0% 50%;
   }
 }
 
 .fade-in {
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
 }
 @keyframes fadeIn {
   0% {
