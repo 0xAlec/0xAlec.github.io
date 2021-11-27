@@ -197,6 +197,7 @@ i:hover {
   #about-text,
   #about-title {
     width: 80%;
+    overflow-x: hidden;
   }
   #media {
     position: relative;
@@ -210,6 +211,7 @@ i:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow-x: hidden;
   }
 
   #home-introduction {
@@ -222,6 +224,7 @@ i:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow-x: hidden;
   }
 }
 
