@@ -114,7 +114,6 @@ p a:hover {
 }
 
 #home-introduction {
-  margin-right: 50px;
   width: 330px;
   min-width: 330px;
 }
@@ -125,9 +124,21 @@ p a:hover {
   font-weight: 700;
 }
 
+#home-image {
+  height: auto;
+  width: auto;
+  border-radius: 25px;
+  max-width: 200px;
+  max-height: 200px;
+  padding-bottom: 10px;
+}
+
+#home-image:hover {
+  opacity: 50%;
+}
+
 #home-text {
   color: transparent;
-
   opacity: 25%;
   text-shadow: 2px 2px black;
   /* -webkit-text-stroke-width: 1px;
