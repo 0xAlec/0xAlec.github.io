@@ -29,7 +29,7 @@ footer {
 
 #media {
   position: relative;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 500px;
 }
 
@@ -77,7 +77,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-p a:hover {
+a:hover {
   text-decoration-style: wavy;
   color: white;
   opacity: 75%;
@@ -107,11 +107,6 @@ p a:hover {
   justify-content: center;
   align-items: center;
   margin: 0;
-}
-
-#home-introduction {
-  /* width: 330px;
-  min-width: 330px; */
 }
 
 #home-hello {
@@ -145,7 +140,6 @@ p a:hover {
 }
 
 #about {
-  height: 100%;
   width: 100%;
   position: relative;
   flex-direction: column;
@@ -163,7 +157,16 @@ p a:hover {
 #about-text {
   width: 500px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+#about-text li {
+  margin: 5px;
+}
+
+#about-text p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #embed {
@@ -171,7 +174,7 @@ p a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 75%;
+  opacity: 80%;
 }
 
 ul {
@@ -200,7 +203,7 @@ i:hover {
 @media screen and (max-width: 930px) {
   #about-text,
   #about-title {
-    width: 80%;
+    width: 70%;
     overflow-x: hidden;
   }
   #home-image:hover {
@@ -208,7 +211,6 @@ i:hover {
   }
   #media {
     position: relative;
-    margin-top: 50px;
     width: 300px;
   }
   #embed {
@@ -221,7 +223,6 @@ i:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
-    overflow-x: hidden;
   }
 
   #home-introduction {
