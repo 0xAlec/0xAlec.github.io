@@ -44,12 +44,14 @@ body {
     #9198e5 100%
   ); */
   /* background: linear-gradient(to right top, #f7b6b6 0%, #9198e5); */
-  background: radial-gradient(
+
+  background-color: #fffaf0;
+  /* background: radial-gradient(
     circle,
     rgba(181, 181, 252, 1) 0%,
     rgba(210, 186, 252, 1) 50%,
     rgba(255, 214, 255, 1) 100%
-  );
+  ); */
 
   animation: gradient 10s ease infinite alternate;
   background-size: 400% 400%;
@@ -79,7 +81,7 @@ body {
 
 a:hover {
   text-decoration-style: wavy;
-  color: white;
+  color: #a8a8ff;
   opacity: 75%;
 }
 
@@ -89,7 +91,7 @@ a:hover {
 }
 
 .nav-link a:hover {
-  color: white;
+  color: #7575ff;
 }
 
 #home {
@@ -129,11 +131,7 @@ a:hover {
 }
 
 #home-text {
-  color: transparent;
-  opacity: 25%;
-  text-shadow: 2px 2px black;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black; */
+  color: #a8a8ff;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.75px;
@@ -191,11 +189,11 @@ a {
 
 i {
   font-size: 25px;
-  opacity: 40%;
+  opacity: 50%;
   padding: 10px;
 }
 i:hover {
-  color: white;
+  color: #a8a8ff;
   opacity: 100%;
 }
 
