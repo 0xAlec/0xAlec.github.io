@@ -44,20 +44,11 @@ body {
     #9198e5 100%
   ); */
   /* background: linear-gradient(to right top, #f7b6b6 0%, #9198e5); */
-
-  /* background: radial-gradient(
-    circle,
-    rgba(181, 181, 252, 1) 0%,
-    rgba(210, 186, 252, 1) 50%,
-    rgba(255, 214, 255, 1) 100%
-  ); */
   background: black;
-
   animation: gradient 10s ease infinite alternate;
   background-size: 400% 400%;
   height: 100vh;
   background-attachment: fixed;
-  color: #252421;
   overflow: auto;
 }
 
@@ -82,7 +73,6 @@ body {
 a:hover {
   text-decoration-style: wavy;
   color: #39ff14;
-  opacity: 75%;
 }
 
 .nav-link a {
